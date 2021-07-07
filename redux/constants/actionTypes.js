@@ -1,0 +1,3 @@
+export const SAVE_LOGIN="SAVE_LOGIN"
+export const LOGIN_ERROR="LOGIN_ERROR" 
+export const CLEAR_LOGIN="CLEAR_LOGIN"

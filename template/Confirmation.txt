@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0"> <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+    <title>Email Alert</title> <!-- the <title> tag shows on email notifications on Android 4.4.  -->
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        body {
+            font-family: 'Varela Round', sans-serif;
+            color: #333;
+        }
+        /* Force Hotmail to display emails at full width */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #d4d4d4;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass {
+            width: 100%;
+            background-color: #d4d4d4;
+        }
+
+            /* Forces Hotmail to display normal line spacing. */
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+        /* Resolves webkit padding issue. */
+        table {
+            border-spacing: 0;
+        }
+
+            /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+            table td {
+                border-collapse: collapse;
+            }
+
+        /* Yahoo auto-sensing link color and border */
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* Apple Mail doesn't supper max-width, so we use media queries to constrain the email width. */
+        @media only screen and (min-device-width: 601px) {
+            .content {
+                width: 600px !important;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="#d4d4d4" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #d4d4d4;">
+    <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#d4d4d4" style="background: #d4d4d4;">
+        <tr>
+            <td>
+
+                <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+                <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="550" align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                <![endif]-->
+                <!-- Beginning of Outlook-specific wrapper : END -->
+                <!-- Email wrapper : BEGIN -->
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 550px;margin: auto;" class="email-wrapper">
+                    <tr>
+                        <td>
+
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;">
+
+
+                                <tr>
+                                    <td>
+                                        <!-- Logo Left, Nav Right : BEGIN -->
+                                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="middle" style="padding-left: 20px;text-align: unset;font-size: 24px;">
+                                                    <a style="text-decoration:none;color:#333;display: flex;align-items:center;" href="https://www.justgreen.in/">
+                                                        <img style="height: 40px;max-height:40px;padding-right: 5px;" src="https://lh3.googleusercontent.com/HIuCuxAMqLCouKUg-3ei4ffgi5hQC_JtvY6ZhkhkF_dQ2ZsKiSO272l81rUsxnZ-Uho51nGc-8l8HkVQYqWbWrTWWoPttfY50JBRUcUft7lIUlaEvvy1ZMP2GVCZHuLZP63PJS9_chlwyFwRWGVgTzKkdVFpJzwD8e5XF5F-5Z-lCSKys0I_t7sKU9KzI9-2xWquiA5txBOBR90Wvp8ivLdlY-IiXSVIg5PrUfMsVJyQNmIeMpX9Zo2Ob8ADSiKrt-WSqqPT28xpjRrPGT7EGqeo6McUpVG5UW70kAqp_m1RImOTOQDkTD-563-9Iu7CWPeC6gnHcUgiRE4ndXMfVZVuXzt81iuxiVbzLGSCuUffJ3HuXMkZf_ZAcnuj2g4vwUV0RPLSteFyQ8PC2HfL16bFa3AxtkQ8a_hi93C_AM_A1Z_5oxRfmyxZZQoJJubIVBK-BJclht2KQgTt4zvrYM32gSHFG5lZgtVtAIM3ivt1dqXT_RWhlM9fP8b7lP5X81TO6WHEHOve4ezOl8Eg1DaOxcrb4q6BRF8Hy2bASsHqcuAVfrmcJ6tObNgez3eIt6csYIaFI6BXF1fvHTo7aaFfGdIGMGeCzNxuVBFa-GpmIWHPdf7R_B0fvzjxawDgIh8Li6a1e2avCjKSi-r2Hp0oqa5X-2FjN8B2GOLsYVC-7QwNgUdzzPCwfq8mV1iCf2NL0Oj43FnPkiiaM9lUJg=w163-h62-no?authuser=0">  Yam
+                                                    </a>
+                                                </td>
+                                                <td valign="middle" style="padding-right: 20px;text-align: right;">
+                                                    <span font-weight: bold;white-space: nowrap;"></span>
+                                                </td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                            </tr>-->
+                                        </table>
+                                        <!-- Logo Left, Nav Right : END -->
+                                    </td>
+                                </tr>
+
+                                <!-- Full Width, Fluid Column : BEGIN -->
+                                <tr>
+                                    <td style="padding: 20px; font-size: 16px; line-height: 20px;  ">
+                                        <p>Hello,</p>
+                                        <p>Welcome to Yam!</p>
+                                        <p>
+                                            You’re almost ready to start enjoying Yam. Please, click the button below to confirm your email address.
+                                        </p>
+                                        <br />
+                                        <p class="text" style="line-height: 20px; font-size: 15px;text-align:center">
+                                            <b>##url##</b>
+                                        </p>
+                                        <p>
+                                            <br /><br />Have a question? Email us at: <a style="text-decoration:none;color:#35B7E8;" href="mailto:alert@plankarma.com">alert@yamapp.com</a>.
+                                        </p>
+                                        <div style="font-size: 16px; line-height: 30px;">
+                                            <!--<br />-->
+                                            <span>
+                                                Thank you!
+                                                <br />
+                                                Yam Team
+                                            </span>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td style="padding: 20px; font-size: 18px; line-height: 24px; color: #000000; text-align: center;">
+                                        <br />
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <hr />
+                                    </td>
+                                </tr>
+                                <!-- Footer : BEGIN -->
+                                <tr>
+                                    <td style="text-align: center; background: #d4d4d4; padding: 20px 0; font-size: 12px; line-height: 18px;">
+                                        <span style="font-weight: bold; text-transform: uppercase; font-size: 14px;"> Yam</span><br />
+                                         <!-- <a href="https://www.justgreen.in/">Visit: www.justgreen.in</a><br /><br /> -->
+                                    </td>
+                                </tr>
+                                <!-- Footer : END -->
+
+                            </table>
+                            <!-- Email wrapper : END -->
+                            <!-- End of Outlook-specific wrapper : BEGIN -->
+                            <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+                            <!-- End of Outlook-specific wrapper : END -->
+
+                        </td>
+                    </tr>
+                </table>
+</body>
+</html>

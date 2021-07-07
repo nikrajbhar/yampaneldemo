@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0"> <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+    <title>Email Alert</title> <!-- the <title> tag shows on email notifications on Android 4.4.  -->
+  
+    <style type="text/css">
+        body {
+            font-family:  sans-serif;
+            color: #333;
+        }
+        /* Force Hotmail to display emails at full width */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #212529;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass {
+            width: 100%;
+            background-color: #212529;
+        }
+
+            /* Forces Hotmail to display normal line spacing. */
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+        /* Resolves webkit padding issue. */
+        table {
+            border-spacing: 0;
+        }
+
+            /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+            table td {
+                border-collapse: collapse;
+            }
+
+        /* Yahoo auto-sensing link color and border */
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* Apple Mail doesn't supper max-width, so we use media queries to constrain the email width. */
+        @media only screen and (min-device-width: 601px) {
+            .content {
+                width: 600px !important;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="#212529" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #212529;">
+    <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#212529" style="background: #212529;">
+        <tr>
+            <td>
+
+                <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+                <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="550" align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td>
+                <![endif]-->
+                <!-- Beginning of Outlook-specific wrapper : END -->
+                <!-- Email wrapper : BEGIN -->
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 550px;margin: auto;" class="email-wrapper">
+                    <tr>
+                        <td>
+
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background: #ffffff;">
+
+
+                                <tr>
+                                    <td>
+                                        <!-- Logo Left, Nav Right : BEGIN -->
+                                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="middle" style="text-align: center;width: 100%;">
+                                                    <a href="##websiteHost##" target="_blank">
+                                                        <img src="##logoLink##" style="width:155px;border-radius: 4px;">
+                                                    </a>
+                                                </td>
+                                                <td valign="middle" style="padding-right: 20px;text-align: right;">
+                                                    <span font-weight: bold;white-space: nowrap;"></span>
+                                                </td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td height="40" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                            </tr>-->
+                                        </table>
+                                        <!-- Logo Left, Nav Right : END -->
+                                    </td>
+                                </tr>
+
+                                <!-- Full Width, Fluid Column : BEGIN -->
+                                <tr>
+                                    <td style="padding: 20px; font-size: 16px; line-height: 20px;  ">
+                                        <p>Hello,</p>
+                                        <p>
+                                            here is your credentials for Twig App.
+                                        </p>
+                                        <br />
+                                        <p class="text" style="line-height: 20px; font-size: 15px;">
+                                            email: <b>##email##</b>
+                                        </p>
+                                        <p class="text" style="line-height: 20px; font-size: 15px;">
+                                            password: <b>##password##</b>
+                                        </p>
+                                         <br />
+                                        <div style="font-size: 16px; line-height: 30px;">
+                                            <span>
+                                                Regards,
+                                                <br />
+                                                <a style="text-decoration:none;color:#212529;" href="##websiteHost##">  Twig Team</a>
+                                                <br />
+                                                E-mail: <a style="text-decoration:none;color:#212529;" href="mailto:##contactemail##">##contactemail##</a>
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td style="padding: 20px; font-size: 18px; line-height: 24px; color: #000000; text-align: center;">
+                                        <br />
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td style="padding: 20px;">
+                                        <hr />
+                                    </td>
+                                </tr>
+                                <!-- Footer : BEGIN -->
+                                <tr>
+                                    <td style="text-align: center; background: #212529;color:#fff; padding: 20px 0; font-size: 12px; line-height: 18px;">
+                                        <span style="font-weight: bold; text-transform: uppercase; font-size: 14px;"> Twig</span><br />
+                                        <a href="##websiteHost##" style="color:#fff;">Visit: ##websiteHost##</a><br /><br />
+                                    </td>
+                                </tr>
+                                <!-- Footer : END -->
+
+                            </table>
+                            <!-- Email wrapper : END -->
+                            <!-- End of Outlook-specific wrapper : BEGIN -->
+                            <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                              </tr>
+                            </table>
+                            <![endif]-->
+                            <!-- End of Outlook-specific wrapper : END -->
+
+                        </td>
+                    </tr>
+                </table>
+</body>
+</html>
